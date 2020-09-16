@@ -1,0 +1,58 @@
+/*menu inicio*/
+/* Add a black background color to the top navigation */
+.topnav { background-color: white; overflow: hidden; }
+
+/* Style the links inside the navigation bar */
+.topnav a { float: left; display: block; color: black; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px; }
+
+/* Change the color of links on hover */
+.topnav a:hover { background-color: #ddd; color: black; }
+
+/* Add an active class to highlight the current page */
+.topnav a.active { background-color: #bf8794; color: white; }
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon { display: none; }
+
+/*menu fin*/
+h1 { color: #bf8794; }
+
+h1 { font-weight: bold; }
+
+p { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; }
+
+a { color: #500232; }
+
+body { background-color: whitesmoke; }
+
+#grilla { display: grid; grid-template-areas: "header header header" "contenido contenido contenido" "contenido contenido contenido" "footer footer footer"; grid-template-rows: 150px auto 200px; grid-template-columns: 20% auto 15%; grid-row-gap: 1px; grid-column-gap: 1px; height: 0vh; margin: 0; }
+
+header, footer, main, aside { background-color: white; }
+
+header { grid-area: header; }
+
+footer { grid-area: footer; padding: 1,3em; background-image: linear-gradient(#500232, #bf8794); }
+
+main { background-size: cover; background-blend-mode: exclusion; background-position: center center; background-attachment: fixed; font-size: 20px; text-align: center; background-color: #bf8794; }
+
+.imagen1 { justify-content: left; width: 200px; height: 90px; transition: width 2s; }
+
+.imagen1 :hover { width: 300px; }
+
+main#contenido { grid-area: contenido; }
+
+.topnav { padding: 1.2em; background-color: white; grid-area: topnav; }
+
+aside { grid-area: publicidad; }
+
+.flex-container { display: flex; flex-wrap: wrap; background-image: linear-gradient(whitesmoke, gray); justify-content: center; }
+
+.flex-container > div { background-color: #bf8794; width: 200px; height: 80px; margin: 10px; text-align: center; line-height: 75px; font-size: 30px; }
+
+.flex-container > div { width: 200px; height: 90px; transition: width 2s; }
+
+.flex-container :hover { width: 300px; }
+
+.error:hover, .error--serious:hover { background-color: #fee; }
+
+.error--serious { border-width: 3px; }
